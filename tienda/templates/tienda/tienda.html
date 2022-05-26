@@ -4,6 +4,18 @@
 
 {% block content %}
 
-<div><p style="color: white;"> Estamos en la app de la tienda </p></div>
+<div class="row">
 
+
+    {% for producto in productos %}
+
+        <div class="card" style="width: 10%;">
+
+            <img src="{{producto.imagen.url}}">
+
+        </div>
+
+    {% endfor %}
+    
+</div>
 {% endblock %}
